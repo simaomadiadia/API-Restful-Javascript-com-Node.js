@@ -490,6 +490,7 @@ __metadata:
     eslint-plugin-prettier: 3.2.0
     express: ^4.18.2
     express-async-error: ^0.0.2
+    express-async-errors: ^3.1.1
     pg: ^8.11.1
     prettier: ^2.8.8
     reflect-metadata: ^0.1.13
@@ -1378,6 +1379,15 @@ __metadata:
   version: 0.0.2
   resolution: "express-async-error@npm:0.0.2"
   checksum: 88203ddc2e5d026c6668bf729bdc34892d443b543c9fa1a415c61b47e1b7a7d4c102b8181b579d53bbc3b8dc4a378b3cd577f68b2e8292b522dd7a5f82d2cb5c
+  languageName: node
+  linkType: hard
+
+"express-async-errors@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "express-async-errors@npm:3.1.1"
+  peerDependencies:
+    express: ^4.16.2
+  checksum: 3a2a6df8ea957185df401a239189d617715c38fba13fac8ced7750b25fa95b0ae656e5d1385d12d0e4dcd7997e90d070b218e86abcf8e68bb6048830b53ba668
   languageName: node
   linkType: hard
 
