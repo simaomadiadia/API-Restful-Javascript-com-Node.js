@@ -30,3 +30,5 @@ class CreateUserService {
     return user;
   }
 }
+
+export default CreateUserService;
