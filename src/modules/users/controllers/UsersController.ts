@@ -13,7 +13,7 @@ export default class UsersController {
     const { name, email, password } = request.body;
 
     const createUser = new CreateUserService();
-    const user = await createUser.execute(name.email.password);
+    const user = await createUser.execute({ name, email, password });
 
     return response.json(user);
   }
