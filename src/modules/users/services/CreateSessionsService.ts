@@ -4,6 +4,7 @@ import UsersRepository from '../typeorm/repositories/UsersRepository';
 import AppError from '@shared/errors/AppError';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
+import authConfig from '@config/auth';
 
 interface IRquest {
   email: string;
@@ -30,9 +31,9 @@ class CreateSessionsService {
     /*
         the fist parameter is the payload, the second is the hash and the last one is an object contain some propriity
      */
-    const token = sign({}, '1fnffuf6yfdbfhdhdhdhd', {
+    const token = sign({}, authConfig.jwt.secret, {
       subject: user.id,
-      expiresIn: '1d',
+      expiresIn: authConfig.jwt.expiresIn,
     });
 
     return {
